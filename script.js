@@ -1,6 +1,6 @@
 const progress = document.getElementById('progress');
 const prev = document.getElementById('prev');
-const next = document.getElement('next');
+const next = document.getElementById('next');
 const circles = document.querySelectorAll('.circle');
 
 // Whichever one is active is gonna set 1 by default
