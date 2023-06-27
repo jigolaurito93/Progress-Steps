@@ -28,3 +28,17 @@ body {
     width: 350px;
 
 }
+
+.progress {
+    background-color: #3498db;
+    /* position of the line is fixed */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) ;
+    height: 4px;
+    width: 0%;
+    /* To make the line sit behind the numbers */
+    z-index: -1;
+    transition: 0.4s ease;
+}
