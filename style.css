@@ -42,3 +42,36 @@ body {
     z-index: -1;
     transition: 0.4s ease;
 }
+
+.progress-container::before {
+    /* Set content to an empty string*/
+    content: '';
+    background-color: #e0e0e0;
+    /* position of the line is fixed */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) ;
+    height: 4px;
+    width: 100%;
+    /* To make the line sit behind the numbers */
+    z-index: -1;
+}
+
+/* Represents the numbers */
+.circle {
+    background-color: #fff;
+    color: #999;
+    /* To make the border circle around the numbers */
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* To center the numbers in the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
+
+}
+
